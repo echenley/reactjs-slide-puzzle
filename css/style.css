@@ -1,1 +1,114 @@
-.container{margin:0 auto;width:302px;text-align:center;font-family:Consolas, Monaco, 'Andale Mono', monospace}#game-board,#game-board *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}#game-board{width:304px;height:304px;padding:0;margin:0;border:2px solid black}.tile{width:100px;height:100px;float:left;line-height:100px;font-size:50px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-touch-callout:none}.tile:hover:not(:empty){cursor:pointer;-webkit-transition:-webkit-transform 0.2s, background 0.2s;transition:transform 0.2s, background 0.2s;background:#eee}.win{-webkit-animation:winner 2s infinite;animation:winner 2s infinite}.move-up,.move-right,.move-down,.move-left{background:#fdd !important}.move-up{-webkit-transform:translateY(-100px);-ms-transform:translateY(-100px);transform:translateY(-100px)}.move-right{-webkit-transform:translateX(100px);-ms-transform:translateX(100px);transform:translateX(100px)}.move-down{-webkit-transform:translateY(100px);-ms-transform:translateY(100px);transform:translateY(100px)}.move-left{-webkit-transform:translateX(-100px);-ms-transform:translateX(-100px);transform:translateX(-100px)}.button{display:inline-block;padding:4px 10px;color:black;border:2px solid black}.button:hover{cursor:pointer}@-webkit-keyframes winner{0%{background:#fdd}50%{background:#fff}100%{background:#fdd}}@keyframes winner{0%{background:#fdd}50%{background:#fff}100%{background:#fdd}}
+.container {
+  margin: 0 auto;
+  width: 302px;
+  text-align: center;
+  font-family: Consolas, Monaco, 'Andale Mono', monospace; }
+
+#game-board, #game-board * {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box; }
+
+#game-board {
+  width: 304px;
+  height: 304px;
+  padding: 0;
+  margin: 0;
+  border: 2px solid black; }
+
+.tile,
+.button {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-touch-callout: none; }
+
+.tile {
+  width: 100px;
+  height: 100px;
+  float: left;
+  line-height: 100px;
+  font-size: 50px;
+  background: #fff; }
+  .tile:hover:not(:empty) {
+    cursor: pointer;
+    -webkit-transition: -webkit-transform 0.2s, background 0.2s;
+            transition: transform 0.2s, background 0.2s;
+    background: #eee; }
+
+.win {
+  -webkit-animation: winner 2s infinite;
+          animation: winner 2s infinite; }
+
+.highlight,
+.move-up,
+.move-right,
+.move-down,
+.move-left {
+  background: #fdd !important; }
+
+.highlight {
+  background: #fff;
+  -webkit-animation: highlight 0.4s;
+          animation: highlight 0.4s; }
+
+.move-up {
+  -webkit-transform: translateY(-100px);
+      -ms-transform: translateY(-100px);
+          transform: translateY(-100px); }
+
+.move-right {
+  -webkit-transform: translateX(100px);
+      -ms-transform: translateX(100px);
+          transform: translateX(100px); }
+
+.move-down {
+  -webkit-transform: translateY(100px);
+      -ms-transform: translateY(100px);
+          transform: translateY(100px); }
+
+.move-left {
+  -webkit-transform: translateX(-100px);
+      -ms-transform: translateX(-100px);
+          transform: translateX(-100px); }
+
+.button {
+  display: inline-block;
+  padding: 4px 10px;
+  color: black;
+  border: 2px solid black; }
+  .button:hover {
+    cursor: pointer; }
+
+@-webkit-keyframes winner {
+  0% {
+    background: #fdd; }
+
+  50% {
+    background: #fff; }
+
+  100% {
+    background: #fdd; } }
+
+@keyframes winner {
+  0% {
+    background: #fdd; }
+
+  50% {
+    background: #fff; }
+
+  100% {
+    background: #fdd; } }
+@-webkit-keyframes highlight {
+  0% {
+    background: #fdd; }
+
+  100% {
+    background: #fff; } }
+@keyframes highlight {
+  0% {
+    background: #fdd; }
+
+  100% {
+    background: #fff; } }
