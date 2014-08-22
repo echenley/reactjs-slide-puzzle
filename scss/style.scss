@@ -1,6 +1,6 @@
 .container {
-    margin: 0 auto;
-    width: 302px;
+    margin: 40px auto;
+    width: 500px;
     text-align: center;
     font-family: Consolas, Monaco, 'Andale Mono', monospace;
 }
@@ -10,6 +10,7 @@
 }
 
 #game-board {
+    display: inline-block;
     width: 304px;
     height: 304px;
     padding: 0;
