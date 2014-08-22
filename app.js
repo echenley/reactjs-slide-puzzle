@@ -122,12 +122,9 @@
                 }, 200);
             }
 
-            // return if they've already won
-            if (this.state.win) return;
-
             // called after tile is fully moved
             // sets new state
-            var afterAnimate = function() {
+            function afterAnimate() {
                 tiles[position] = '';
                 tiles[move] = status;
                 this.setState({
@@ -136,6 +133,9 @@
                     win: this.checkBoard()
                 });
             };
+
+            // return if they've already won
+            if (this.state.win) return;
 
             // check possible moves
             for (var i = 0; i < moves[position].length; i++) {
